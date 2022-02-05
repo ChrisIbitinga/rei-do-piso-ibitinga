@@ -242,24 +242,28 @@
 
 
 
-#products {
+/* #products {
     margin-top: 5rem;
-    /* background: var(--bg_cards); */
     padding-top: 5rem;
     margin-top: 0;
 }
 
 #products h2 {
     font-size: 3rem;
-    /* margin-left: 1rem; */
     font-family: 'Merriweather Sans', sans-serif;
     color: var(--amber);
 }
 
 .products_box {
     margin-top: 5rem;
-}
+} */
 
+#brands{
+
+}
+.box_slide{
+
+}
 .slide_box {
     display: flex;
     justify-content: center;
