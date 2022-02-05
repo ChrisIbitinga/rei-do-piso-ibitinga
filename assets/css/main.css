@@ -1,0 +1,362 @@
+
+/*----------------- NAVBAR ----------------- */
+.navbar {
+    width: min(1380px, 100%);
+    height: 7.2rem;
+    background: var(--primary_color);
+    display: flex;
+    justify-content: space-between;
+    padding: .9rem 10rem;
+    align-items: center;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--text_details);
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.3));
+    position: fixed;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar a {
+    color: var(--text_light);
+    font-family: 'Poppins', sans-serif;
+
+}
+.navbar a:hover {
+   background: var(--primary_color);
+   color: var(--text_details);
+   transition: ease .7s;
+}
+.navbar a.brand img{
+   width: 7rem;
+   height: 7rem;
+}
+
+
+
+/*------------------ HERO --------------------- */
+
+.hero {
+    width: min(138rem, 100%);
+    max-width: 1380px;
+    display: flex;
+    flex-direction: row;
+    padding: 9rem 10rem 0 10rem;
+
+}
+
+.hero_caption {
+    flex: 1;
+    margin-top: 7rem;
+    position: relative;
+}
+
+.hero_caption h2 {
+    font-size: 8.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    color: var(--text_tile);
+    line-height: 8rem;
+
+}
+
+.hero_caption span {
+    font-size: 2.5rem;
+    font-weight: 700;
+    display: block;
+    margin: 1rem;
+ 
+}
+.hero_caption p {
+    font-size: 1.7rem;
+    line-height: 2rem;
+    letter-spacing: 1.5px;
+    margin: 2rem 0 4rem 0;
+    font-family: 'Poppins', sans-serif;
+    padding: .8rem;
+}
+
+.hero_images {
+    flex: 2;
+}
+.hero_images span{
+    color: var(--text_light);
+}
+.box_opacity {
+    position: absolute;
+    background: rgba(0, 0, 0, .4);
+    width: 100%;
+    min-height: 99%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    transition: ease 1s;
+}
+
+.box_opacity:hover {
+    transition: ease 1s;
+    background: rgba(0, 0, 0, .9);
+}
+
+.box_opacity span {
+    writing-mode: vertical-rl;
+    text-transform: uppercase;
+    padding: 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+}
+
+.box_social{
+    display: flex;
+    align-items: center;
+    color: var(--text_dark);
+}
+.box_social a{
+    color: var(--text_black);
+    font-size: 1.5rem;
+}
+.box_social a:hover{
+    color: var(--text_hover);
+    transition: color .3s;
+}
+.box_social img{
+  margin-right: 1.6rem;
+}
+.card_my {
+    background: var(--body_bg_color);
+    margin-top:3.5rem;
+    box-shadow: none;
+}
+
+.card_my div {
+    padding: .5rem;
+    font-size: .95rem;
+}
+
+/*-------------------------- ABOUT --------------------------*/
+#about {
+    margin: 8rem 0;
+    padding: 8rem 0;
+    background: var(--primary_color);
+}
+
+.about_image {
+    position: relative;
+}
+
+.block {
+    width: 4rem;
+    min-height: 9rem;
+    background: var(--text_details);
+    position: absolute;
+    top: 2rem;
+    right: -2rem;
+    z-index: 1000;
+}
+.block.small{
+    width: 4rem;
+    min-height: 9rem;
+    background: var(--text_details);
+    position: absolute;
+    top: 3rem;
+    right: 1rem;
+    z-index: 1000;
+}
+
+.about_content {
+    padding-left: 3rem;
+}
+
+.about_content h2 {
+    font-size: 3.5rem;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text_details);
+    margin-bottom: 3rem;
+}
+.about_content p {
+    font-size: 1.6rem;
+    color: var(--text_light);
+}
+
+/*--------------------------- SERVICES ----------------------------- */
+#services{
+    margin: 8rem 0;
+    padding: 8rem 0; 
+}
+.box_service{
+    display: flex;
+    flex-direction: column;
+}
+.service_item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 4.5rem;
+    border-bottom: 2px solid var(--text_light);
+    padding-bottom: 2rem;
+}
+.service_icon{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background: var(--primary_color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.service_icon i{
+  color: var(--text_details);
+  font-size: 3rem;
+}
+.service_caption{
+    margin-left: 2rem;
+}
+.service_caption span{
+   font-size: 2.8rem;
+   cursor: pointer;
+   transition: color .3s;
+}
+.service_caption span:hover{
+   color: var(--text_hover);
+}
+.tab_services{
+    display: none;
+}
+.tab_services figure{
+    padding: 2rem;
+    margin-top: -2rem;
+    filter: drop-shadow(2px 6px 6px rgba(0, 0, 0, 0.4));
+}
+.tab_services h2{
+    font-size: 3.5rem;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text_tile);
+    margin-bottom: 3rem;
+}
+.tab_services button{
+    margin-top: 2rem;
+}
+
+
+
+
+#products {
+    margin-top: 5rem;
+    /* background: var(--bg_cards); */
+    padding-top: 5rem;
+    margin-top: 0;
+}
+
+#products h2 {
+    font-size: 3rem;
+    /* margin-left: 1rem; */
+    font-family: 'Merriweather Sans', sans-serif;
+    color: var(--amber);
+}
+
+.products_box {
+    margin-top: 5rem;
+}
+
+.slide_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.slide_box img {
+    width: 20%;
+}
+
+#parallax {
+    width: 100%;
+    min-height: 10rem;
+    margin-top: 5rem;
+
+}
+
+.owl-dot {
+    background: var(--bg_techs);
+}
+
+#exemples {
+    margin-top: 5rem;
+}
+
+.inspiration_image {
+    position: relative;
+}
+
+.inspiration_caption {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 50vh;
+
+}
+
+.inspiration_caption p {
+    margin-top: 12rem;
+}
+
+.inspiration_caption h3 {
+    margin-top: -12rem;
+    font-size: 2rem;
+    /* color: var(--amber); */
+}
+
+.inspiration_caption span {
+    font-size: 5rem;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 2.8px;
+    position: absolute;
+    right: -10rem;
+    z-index: 999;
+    color: var(--amber);
+}
+#specials{
+    padding-top: 5rem;
+}
+#specials h2{
+    font-size: 3rem;
+    /* margin-left: 1rem; */
+    font-family: 'Merriweather Sans', sans-serif;
+    margin-bottom: 3rem;
+
+}
+.box_card{
+    display: flex;
+    align-items: center;
+    padding: .2rem 0;
+}
+.box_card h3 {
+    font-weight: 700;
+    color: var(--text_color);
+    font-size: 1.2rem;
+    margin-top: .5rem;
+    max-width: 25ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.box_card span {
+   color: var(--text_dark);
+}
+.box_card a {
+   color: var(--text_color);
+   font-weight: 400;
+   display: flex;
+   align-items: center;
+}
+.box_card a:hover {
+   color: var(--bg_techs);
+}
+.box_card a i{
+   font-size: 2rem;
+   margin-left: 1rem;
+}

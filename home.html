@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rei do Piso - Home</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma-rtl.min.css">
+
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="./assets/css/variables.css">
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+
+    <header id="home">
+        <nav>
+            <div class="navbar">
+
+                <a href="#" class="brand">
+                    <img class="image is-96x96" src="./assets/img/logo.svg" alt="Logo O Rei do Piso">
+                </a>
+                <div class="navbar-menu navbar-end">
+                    <ul>
+                        <li><a class="navbar-item" href="#home">Home</a></li>
+                        <li><a class="navbar-item" href="#about">Sobre Nós</a></li>
+                        <li><a class="navbar-item" href="#services">Produtos</a></li>
+                        <li><a class="navbar-item" href="">Contato</a></li>
+                    </ul>
+                </div>
+
+                <a role="button" class="navbar-burger end" aria-label="menu" aria-expanded="false"
+                    data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+        </nav>
+        <div class="hero">
+            <div class="hero_caption">
+                <h2>
+                    Rei <br> do Piso
+                </h2>
+                <span>
+                    Ibitinga e região.
+                </span>
+                <p>
+                    Pisos, revestimentos e porcelanatos.
+                </p>
+
+                <button class="button is-medium is-my-primary">
+                    Entrar em contato
+                    <i class="material-icons">whatsapp</i>
+                </button>
+
+                <div class="card_my">
+                    <div class="box_social">
+                        <img class="image is-24x24" src="./assets/img/icon-facebook-black.svg"
+                            alt="Link para o Facebook">
+                        <a href="">
+                            facebook.com/reidopiso
+                        </a>
+                    </div>
+                    <div class="box_social">
+                        <img class="image is-24x24" src="./assets/img/icon-instagram-black.svg"
+                            alt="Link para o Instagram">
+                        <a href="https://www.instagram.com/reidopiso_ibitinga/" target="_blank">
+                            @reidopiso_ibitinga
+                        </a>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="hero_images">
+                <div class="columns">
+                    <div class="column ">
+                        <div class="box_relative">
+                            <img src="./assets/img/bg1.png" alt="">
+                            <div class="box_opacity">
+                                <span>Revestimentos</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column ">
+                        <div class="box_relative">
+                            <img src="./assets/img/bg2.png" alt="">
+                            <div class="box_opacity">
+                                <span>Pisos</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column ">
+                        <div class="box_relative">
+                            <img src="./assets/img/bg3.png" alt="">
+                            <div class="box_opacity">
+                                <span>Porcelanatos</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <div class="about_image shadow">
+                        <img loading="lazy" src="./assets/img/bg-about.jpg" alt="">
+                        <div class="block"></div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="about_content">
+                        <h2>Sobre Nós</h2>
+                        <p>
+                            Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de
+                            impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido
+                            pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.
+                            Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração
+                            eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60,
+                            quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais
+                            recentemente quando passou a ser integrado a softwares de editoração eletrônica
+                            como Aldus PageMaker.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-two-fifths">
+                    <div class="box_service">
+                        <div class="service_item">
+                            <div class="service_icon">
+                                <i class="material-icons">handyman</i>
+                            </div>
+                            <div class="service_caption">
+                                <span id="active" onclick="openTab('pisos')" class="trigger_tab">
+                                    Pisos
+                                    <i class="material-icons">swipe_right</i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="service_item">
+                            <div class="service_icon">
+                                <i class="material-icons">handyman</i>
+                            </div>
+                            <div class="service_caption">
+                                <span onclick="openTab('revestimentos')" class="trigger_tab">
+                                    Revestimentos
+                                    <i class="material-icons">swipe_right</i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="service_item">
+                            <div class="service_icon">
+                                <i class="material-icons">handyman</i>
+                            </div>
+                            <div class="service_caption">
+                                <span onclick="openTab('porcelanatos')" class="trigger_tab">
+                                    Porcelanatos
+                                    <i class="material-icons">swipe_right</i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="pisos" class="column tab_services">
+                    <div class="columns">
+                        <div class="column is-one-third">
+                            <figure class="image p2">
+                                <img class=" is-rounded" src="./assets/img/bg2.png" alt="">
+                                <div class="block small"></div>
+                            </figure>
+                        </div>
+                        <div class="column">
+                            <h2>Pisos</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                 Fugit perspiciatis earum illo autem molestiae repellat.
+                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                 Fugit perspiciatis earum illo autem molestiae repellat.
+                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                 Fugit perspiciatis earum illo autem molestiae repellat.
+                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                 Fugit perspiciatis earum illo autem molestiae repellat.
+                            </p>
+                            <button class="button is-medium is-my-primary">
+                              Pedir informações
+                                <i class="material-icons">whatsapp</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div id="revestimentos" class="column  tab_services">
+                    <div class="columns">
+                        <div class="column is-one-third">
+                            <figure class="image p2">
+                                <img class=" is-rounded" src="./assets/img/bg1.png" alt="">
+                                <div class="block small"></div>
+                            </figure>
+                        </div>
+                        <div class="column">
+                            <h2>Revestimentos</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                 Fugit perspiciatis earum illo autem molestiae repellat.
+                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                 Fugit perspiciatis earum illo autem molestiae repellat.
+                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                 Fugit perspiciatis earum illo autem molestiae repellat.
+                                 Lorem ipsum dolor sit amet, consectetur.
+                            </p>
+                            <button class="button is-medium is-my-primary">
+                                Pedir informações
+                                  <i class="material-icons">whatsapp</i>
+                              </button>
+                        </div>
+                    </div>
+                </div>
+                <div id="porcelanatos" class="column  tab_services">
+                    <div class="columns">
+                        <div class="column is-one-third">
+                            <figure class="image p2">
+                                <img class="is-rounded" src="./assets/img/bg3.png" alt="">
+                                <div class="block small"></div>
+                            </figure>
+                        </div>
+                        <div class="column">
+                            <h2>Porcelanatos</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                 Fugit perspiciatis earum illo autem molestiae repellat.
+                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                 Fugit perspiciatis earum illo autem molestiae repellat.
+                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                 Fugit perspiciatis earum illo autem molestiae repellat.
+                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                 Fugit perspiciatis earum illo autem molestiae repellat.
+                                 consectetur adipisicing elit.
+                                 Fugit perspiciatis earum illo autem molestiae repellat.
+                            </p>
+                            <button class="button is-medium is-my-primary">
+                                Pedir informações
+                                  <i class="material-icons">whatsapp</i>
+                              </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/scriptOwlCarousel.js"></script>
+    <script src="./assets/js/simpleParallax.min.js"></script>
+    <script src="./assets/js/parallax.js"></script>
+</body>
+
+</html>
