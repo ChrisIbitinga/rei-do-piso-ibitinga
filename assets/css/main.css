@@ -359,7 +359,7 @@
     padding: 8rem 0;
 }
 .contact_labels{
-    padding-right: 4rem;
+    padding-right: 2rem;
 }
 .contact_labels span{
    color: var(--text_grey);
@@ -380,8 +380,8 @@
     align-items: center;
 }
 .contact_icon{
-    width: 6rem;
-    height: 6rem;
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
     background: var(--primary_color);
 
@@ -389,7 +389,7 @@
     align-items: center;
     justify-content: center;
     color: var(--text_details);
-    margin-right: 2rem;
+    margin-right: 1rem;
 }
 .box_contact_item span{
     color: var(--text_tile);
