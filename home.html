@@ -50,10 +50,11 @@
                     Rei <br> do Piso
                 </h2>
                 <span>
-                    Ibitinga e região.
+                    Materiais e Acabamentos
                 </span>
                 <p>
-                    Pisos, revestimentos e porcelanatos.
+                    Pisos, revestimentos, porcelanatos, argamassa,
+                    ferramentas e muito mais.
                 </p>
 
                 <button class="button is-medium is-my-primary">
@@ -158,6 +159,7 @@
                             </div>
                         </div>
 
+
                         <div class="service_item">
                             <div class="service_icon">
                                 <i class="material-icons">handyman</i>
@@ -177,6 +179,17 @@
                             <div class="service_caption">
                                 <span onclick="openTab('porcelanatos')" class="trigger_tab">
                                     Porcelanatos
+                                    <i class="material-icons">swipe_right</i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="service_item">
+                            <div class="service_icon">
+                                <i class="material-icons">handyman</i>
+                            </div>
+                            <div class="service_caption">
+                                <span id="active" onclick="openTab('ferramentas')" class="trigger_tab">
+                                    Ferramentas
                                     <i class="material-icons">swipe_right</i>
                                 </span>
                             </div>
@@ -249,6 +262,34 @@
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                 Fugit perspiciatis earum illo autem molestiae repellat.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Fugit perspiciatis earum illo autem molestiae repellat.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Fugit perspiciatis earum illo autem molestiae repellat.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Fugit perspiciatis earum illo autem molestiae repellat.
+                                consectetur adipisicing elit.
+                                Fugit perspiciatis earum illo autem molestiae repellat.
+                            </p>
+                            <button class="button is-medium is-my-primary">
+                                Pedir informações
+                                <i class="material-icons">whatsapp</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="ferramentas" class="column  tab_services">
+                    <div class="columns">
+                        <div class="column is-one-third">
+                            <figure class="image p2">
+                                <img class="is-rounded" src="./assets/img/bg4.png" alt="">
+                                <div class="block small"></div>
+                            </figure>
+                        </div>
+                        <div class="column">
+                            <h2>Ferramentas</h2>
+                            <p>
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                 Fugit perspiciatis earum illo autem molestiae repellat.
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -348,7 +389,7 @@
                     <div class="inspiration_image">
                         <img src="./assets/img/bg-inspiration.jpg" alt="">
                         <div class="block"></div>
-                        <div class="box_opacity"></div>
+                        <div class="box_opacity_true"></div>
                     </div>
                 </div>
             </div>
@@ -362,7 +403,7 @@
                 <div class="column">
                     <div class="contact_labels">
                         <span>Contato</span>
-                        <h2>Como nos encontrar.</h2>
+                        <h2>Canais de comunicação.</h2>
                         <p>
                             Em nossos canais de atendimento você pode fazer seus pedidos, tirar dúvidas
                             e muito mais, sempre falando com especialistas que entendem do assunto.
@@ -389,7 +430,76 @@
                     </div>
                 </div>
                 <div class="column">
-                    <iframe class="shadow" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3705.6279095673767!2d-48.82156828542847!3d-21.755946403286007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bf29dd7a917c59%3A0x755dd295fdf55a35!2sAv.%20Jo%C3%A3o%20Silvestre%20Cust%C3%B3dio%2C%20782%20-%20Bela%20Vista%2C%20Ibitinga%20-%20SP%2C%2014940-000!5e0!3m2!1spt-BR!2sbr!4v1644096874243!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                    <div class="form_contact">
+                        <div class="columns">
+                            <div class="column">
+
+                                <span>Ficou com alguma dúvida?</span>
+                                <h2>Mande sua mensagem.</h2>
+
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <div class="container">
+                                    <form action="">
+                                        <div class="field">
+                                            <label class="label">Nome</label>
+                                            <div class="control">
+                                                <input name="name" id="name" class="input is-large" type="text"
+                                                    placeholder="Ex: João dos Santos">
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <label class="label">Email</label>
+                                            <p class="control has-icons-left has-icons-right">
+                                                <input id="email" name="email" class="input is-large" type="email"
+                                                    placeholder="Ex: seuemail@email.com">
+                                                <span class="icon is-small is-left">
+                                                    <i class="material-icons">mail</i>
+                                                </span>
+                                                <span class="icon is-small is-right">
+                                                    <i class="material-icons">check</i>
+                                                </span>
+                                            </p>
+                                        </div>
+                                        <div class="field">
+                                            <label for="message" class="label">Mensagem</label>
+                                            <div class="control">
+                                                <textarea class="textarea is-medium"
+                                                    placeholder="Escreva sua mensagem."></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="control mt-1 is-flex is-justify-content-flex-end">
+                                                <button type="submit" class="button  is-my-primary is-right">
+                                                    Enviar
+                                                    <i class="material-icons">send</i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <div class="contact_map">
+                        <div class="ball_small"></div>
+                        <div class="ball"></div>
+                        <h2>Onde estamos.</h2>
+                        <span>
+                            Atendemos em toda Ibitinga e região.
+                        </span>
+                        <iframe class="shadow"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3705.6279095673767!2d-48.82156828542847!3d-21.755946403286007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bf29dd7a917c59%3A0x755dd295fdf55a35!2sAv.%20Jo%C3%A3o%20Silvestre%20Cust%C3%B3dio%2C%20782%20-%20Bela%20Vista%2C%20Ibitinga%20-%20SP%2C%2014940-000!5e0!3m2!1spt-BR!2sbr!4v1644096874243!5m2!1spt-BR!2sbr"
+                            style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                    </div>
                 </div>
             </div>
         </div>

@@ -11,6 +11,7 @@
     border-bottom: 2px solid var(--text_details);
     filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.3));
     position: fixed;
+    z-index: 1000;
 }
 
 .navbar ul {
@@ -49,7 +50,7 @@
 
 .hero_caption {
     flex: 1;
-    margin-top: 7rem;
+    margin-top: 6rem;
     position: relative;
 }
 
@@ -75,15 +76,34 @@
     font-size: 1.7rem;
     line-height: 2rem;
     letter-spacing: 1.5px;
-    margin: 2rem 0 4rem 0;
+    margin: 2rem 0 1.5rem 0;
     font-family: 'Poppins', sans-serif;
-    padding: .8rem;
+    padding: .9rem;
+}
+.box_social {
+    display: flex;
+    align-items: center;
+    color: var(--text_dark);
+}
+
+.box_social a {
+    color: var(--text_black);
+    font-size: 1.5rem;
+}
+
+.box_social a:hover {
+    color: var(--text_hover);
+    transition: color .3s;
+}
+
+.box_social img {
+    margin-right: 1.6rem;
 }
 
 .hero_images {
     flex: 2;
+    margin-top: 2rem;
 }
-
 .hero_images span {
     color: var(--text_light);
 }
@@ -103,6 +123,15 @@
     transition: ease 1s;
     background: rgba(0, 0, 0, .9);
 }
+.box_opacity_true {
+    position: absolute;
+    background: rgba(0, 0, 0, .1);
+    width: 100%;
+    min-height: 99%;
+    top: 0;
+    left: 0;
+    transition: ease 1s;
+}
 
 .box_opacity span {
     writing-mode: vertical-rl;
@@ -111,26 +140,6 @@
     font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: 1.8px;
-}
-
-.box_social {
-    display: flex;
-    align-items: center;
-    color: var(--text_dark);
-}
-
-.box_social a {
-    color: var(--text_black);
-    font-size: 1.5rem;
-}
-
-.box_social a:hover {
-    color: var(--text_hover);
-    transition: color .3s;
-}
-
-.box_social img {
-    margin-right: 1.6rem;
 }
 
 .card_my {
@@ -205,7 +214,7 @@
 .service_item {
     display: flex;
     align-items: center;
-    margin-bottom: 4.5rem;
+    margin-bottom: 2.5rem;
     border-bottom: 2px solid var(--text_light);
     padding-bottom: 2rem;
 }
@@ -260,29 +269,6 @@
     margin-top: 2rem;
 }
 
-
-
-
-/* #products {
-    margin-top: 5rem;
-    padding-top: 5rem;
-    margin-top: 0;
-}
-
-#products h2 {
-    font-size: 3rem;
-    font-family: 'Merriweather Sans', sans-serif;
-    color: var(--amber);
-}
-
-.products_box {
-    margin-top: 5rem;
-} */
-
-#brands {}
-
-.box_slide {}
-
 .slide_box {
     display: flex;
     justify-content: center;
@@ -298,7 +284,7 @@
 .owl-dot {
     background: var(--bg_techs);
 }
-
+/* --------------------------------INSPIRATION ----------------------------- */
 #inspiration {
     background: var(--primary_color);
     margin: 8rem 0;
@@ -355,11 +341,11 @@
 }
 
 #contact{
-    margin: 8rem 0;
-    padding: 8rem 0;
+    margin: 6rem 0;
+    padding: 6rem 0;
 }
 .contact_labels{
-    padding-right: 2rem;
+    padding-right: 3rem;
 }
 .contact_labels span{
    color: var(--text_grey);
@@ -394,6 +380,84 @@
 .box_contact_item span{
     color: var(--text_tile);
 }
+.form_contact{
+    background: var(--primary_color);
+    padding: 3rem;
+    border-radius: .8rem;
+}
+.form_contact span{
+    color: var(--text_light);
+    font-size: 1.6rem; 
+    font-weight: 100;
+}
+.form_contact .label{
+    color: var(--text_light);
+    font-size: 1.4rem; 
+    font-weight: 600;
+    letter-spacing: .1rem;
+}  
+.form_contact h2{
+    color: var(--text_details);
+   font-weight: 400;
+   font-family: 'Poppins', sans-serif;
+   font-size: 3rem;
+   margin-top: 2rem;
+} 
+.contact_map{
+    width: 100%;
+    min-height: 45rem;
+    margin-top: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.contact_map .ball{
+    width: 30rem;
+    height: 30rem;
+
+    background: var(--text_grey);
+    position: absolute;
+    top: 4rem;
+    right: 0;
+
+    clip-path: circle();
+
+    opacity: 0.15;
+}
+.contact_map .ball_small{
+    width: 20rem;
+    height: 20rem;
+
+    background: var(--text_grey);
+    position: absolute;
+    top: 8rem;
+    left: 0rem;
+
+    clip-path: circle();
+
+    opacity: 0.15;
+}
+.contact_map h2{
+    color: var(--text_tile);
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    margin: 2rem 0;
+}
+.contact_map span{
+    color: var(--text_grey);
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    margin: 1rem 0 4rem 0;
+}
+.contact_map iframe{
+    width: 100%;
+    min-height: 45rem;;
+}
+
 
 
 #specials {
