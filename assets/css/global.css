@@ -76,5 +76,10 @@ section{
  transition: all .6s ease-in-out;
  -webkit-transition: all .6s ease-in-out;
 }
-
+.center{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    
+}
 

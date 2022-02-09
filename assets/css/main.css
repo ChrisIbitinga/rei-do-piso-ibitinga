@@ -80,6 +80,7 @@
     font-family: 'Poppins', sans-serif;
     padding: .9rem;
 }
+
 .box_social {
     display: flex;
     align-items: center;
@@ -104,6 +105,7 @@
     flex: 2;
     margin-top: 2rem;
 }
+
 .hero_images span {
     color: var(--text_light);
 }
@@ -123,6 +125,7 @@
     transition: ease 1s;
     background: rgba(0, 0, 0, .9);
 }
+
 .box_opacity_true {
     position: absolute;
     background: rgba(0, 0, 0, .1);
@@ -284,6 +287,7 @@
 .owl-dot {
     background: var(--bg_techs);
 }
+
 /* --------------------------------INSPIRATION ----------------------------- */
 #inspiration {
     background: var(--primary_color);
@@ -340,32 +344,39 @@
     filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.4));
 }
 
-#contact{
+#contact {
     margin: 6rem 0;
     padding: 6rem 0;
+    height: auto;
 }
-.contact_labels{
+
+.contact_labels {
     padding-right: 3rem;
 }
-.contact_labels span{
-   color: var(--text_grey);
+
+.contact_labels span {
+    color: var(--text_grey);
 }
-.contact_labels h2{
-   color: var(--text_tile);
-   font-weight: 400;
-   font-family: 'Poppins', sans-serif;
-   font-size: 3rem;
-   margin-top: 2rem;
+
+.contact_labels h2 {
+    color: var(--text_tile);
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    margin-top: 2rem;
 }
-.contact_labels p{
+
+.contact_labels p {
     margin: 2rem 0 4rem 0;
 }
-.box_contact_item{
+
+.box_contact_item {
     margin-top: 2rem;
     display: flex;
     align-items: center;
 }
-.contact_icon{
+
+.contact_icon {
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
@@ -377,33 +388,39 @@
     color: var(--text_details);
     margin-right: 1rem;
 }
-.box_contact_item span{
+
+.box_contact_item span {
     color: var(--text_tile);
 }
-.form_contact{
+
+.form_contact {
     background: var(--primary_color);
     padding: 3rem;
     border-radius: .8rem;
 }
-.form_contact span{
+
+.form_contact span {
     color: var(--text_light);
-    font-size: 1.6rem; 
+    font-size: 1.6rem;
     font-weight: 100;
 }
-.form_contact .label{
+
+.form_contact .label {
     color: var(--text_light);
-    font-size: 1.4rem; 
+    font-size: 1.4rem;
     font-weight: 600;
     letter-spacing: .1rem;
-}  
-.form_contact h2{
+}
+
+.form_contact h2 {
     color: var(--text_details);
-   font-weight: 400;
-   font-family: 'Poppins', sans-serif;
-   font-size: 3rem;
-   margin-top: 2rem;
-} 
-.contact_map{
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+
+.contact_map {
     width: 100%;
     min-height: 45rem;
     margin-top: 7rem;
@@ -411,9 +428,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    position: relative;
 }
-.contact_map .ball{
+
+/* .contact_map .ball{
     width: 30rem;
     height: 30rem;
 
@@ -438,25 +455,93 @@
     clip-path: circle();
 
     opacity: 0.15;
-}
-.contact_map h2{
+} */
+.contact_map h2 {
     color: var(--text_tile);
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
     font-size: 3rem;
     margin: 2rem 0;
 }
-.contact_map span{
+
+.contact_map span {
     color: var(--text_grey);
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
     font-size: 1.8rem;
     margin: 1rem 0 4rem 0;
 }
-.contact_map iframe{
+
+.contact_map iframe {
     width: 100%;
-    min-height: 45rem;;
+    min-height: 45rem;
+    ;
 }
+
+#footer {
+    background: var(--primary_color);
+}
+
+.footer {
+    background: var(--primary_color);
+    padding-top: 5rem;
+    color: var(--text_details);
+}
+
+.footer img {
+    margin-top: -12rem;
+    display: block;
+    width: 70%;
+}
+
+.footer h1 {
+    font-size: 4rem;
+    color: var(--text_light);
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer span {
+    font-size: 2rem;
+    color: var(--text_light);
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer a {
+    color: var(--text_details);
+    margin-top: 1rem;
+    display: block;
+}
+
+.box_footer_cotact {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.box_footer_cotact:nth-child(2) {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.box_footer_cotact i {
+    margin-right: .7rem;
+}
+
+.box_footer_cotact_plus {
+    margin-top: .7rem;
+}
+
+.box_footer_cotact_plus a {
+    display: flex;
+    align-items: center;
+}
+
+.box_footer_cotact_plus i {
+    margin-right: .7rem;
+}
+
+
 
 
 
