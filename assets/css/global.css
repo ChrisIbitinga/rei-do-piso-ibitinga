@@ -5,81 +5,124 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Poppins', sans-serif;
  */
 
- *{
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
-     /* border: none; */
-     text-decoration: none;
-     list-style: none;
- }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: none; */
+    text-decoration: none;
+    list-style: none;
+}
 
- body{
+body {
     height: 100vh;
     background: var(--bg_light);
- }
- html{
+}
+
+html {
     font-size: 62.5%;
     scroll-behavior: smooth;
- }
- :target {
+}
+
+:target {
     scroll-margin-top: .8em;
-  }
- body,
+}
+
+body,
 button,
 input,
-textarea{
+textarea {
     /* intervalo de tamanho min, padrão e máximo */
-   font-size: clamp(14px, 1.6rem, 2vw);
-   font-family: 'Open Sans', sans-serif;
+    font-size: clamp(14px, 1.6rem, 2vw);
+    font-family: 'Open Sans', sans-serif;
+    resize: none;
 }
- .column-0{
-     padding: 0;
-     margin: 0;
- }
 
- .is-my-primary{
-     background: var(--text_details);
-     border: var(--amber);
-     
- }
- .shadow{
+input,
+textarea {
+    width: 100%;
+    outline: none;
+    padding: .5rem;
+    border-radius: .4rem;
+    border:none;
+    margin-bottom: .7rem;
+}
+label.label{
+    margin: 1rem 0 .7rem 0;
+    display: block;
+}
+textarea{
+    height: 9rem;
+}
+.column-0 {
+    padding: 0;
+    margin: 0;
+}
+
+.is-my-primary {
+    background: var(--text_details);
+    border: var(--amber);
+
+}
+
+.shadow {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
- }
- .box_relative{
-     position: relative;
- }
- .mt-1{
-     margin-top: 3rem!important;
- }
- .box{
-     background: var(--light_text);
- }
- .button{
-     padding: 2.5rem 1.8rem;
-     font-size: 1.8rem!important;
-     font-weight: 400;
-     font-family: 'Poppins', sans-serif;
- }
- .button i{
-     margin-left: .8rem;
- }
+}
+
+.box_relative {
+    position: relative;
+}
+
+.mt-1 {
+    margin-top: 3rem !important;
+}
+
+.box {
+    background: var(--light_text);
+}
+
+.button {
+    padding: 1.5rem 2rem;
+    font-size: 1.8rem !important;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    border-radius: .8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: .4rem .4rem .4rem  rgba(0, 0, 0, .11);
+    transition: box-shadow ease .5s;
+    cursor: pointer;
+}
+.button:hover {
+    box-shadow: .2rem .2rem .2em  rgba(0, 0, 0, .11);
+}
+
+.button i {
+    margin-left: .8rem;
+}
 
 
- .scroll,
-section{
- position: relative;
- width: 100%;
- height: 100%;
- left: 0;
- top: 0;
- transition: all .6s ease-in-out;
- -webkit-transition: all .6s ease-in-out;
+.scroll,
+section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: all .6s ease-in-out;
+    -webkit-transition: all .6s ease-in-out;
 }
-.center{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-    
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
+.is-flex-tab{
+    display: flex!important;
+    flex-direction: row;
+}
+
 

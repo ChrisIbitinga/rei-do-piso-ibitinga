@@ -22,7 +22,7 @@ $(document).ready(function(){
             autoplay: true
         },
         1000:{
-            items:3,
+            items:4,
             nav:false,
             loop:true,
             dots:true,

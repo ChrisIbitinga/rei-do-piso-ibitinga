@@ -71,10 +71,10 @@ function openTab(idTab) {
     const contents = document.querySelectorAll('.tab_services')
     
     for(let i = 0; i < contents.length; i++) {
-        contents[i].classList.remove('is-flex')   
+        contents[i].classList.remove('is-flex-tab')   
     }
 
-    itemChange.classList.add('is-flex')
+    itemChange.classList.add('is-flex-tab')
 
 
 }
