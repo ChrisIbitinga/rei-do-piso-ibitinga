@@ -5,7 +5,7 @@ new simpleParallax(image, {
     transition: 'cubic-bezier(0,0,0,1)'
 });
 
-const menuItems = document.querySelectorAll('.navbar-menu a[href^="#"]')
+const menuItems = document.querySelectorAll('.navbar-menu a[href^="#"], .footer_contact a[href^="#"]')
 
 menuItems.forEach(item => {
     item.addEventListener('click', scrollToIdClick)
@@ -78,6 +78,66 @@ function openTab(idTab) {
 
 
 }
+
+
+
+let modalPolitic =   document.querySelector('#modal-politic')
+
+let btnPolitic =     document.querySelector('#btnPolitic')
+let btnClose   =     document.querySelector('.is-my-danger')
+
+let btnPoliticForm = document.querySelector('#btnPoliticForm')
+
+
+
+let coll = document.getElementsByClassName("collapsible");
+let i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    let faq_answer = this.nextElementSibling;
+    if (faq_answer.style.display === "block") {
+        faq_answer.style.display = "none";
+    } else {
+        faq_answer.style.display = "block";
+    }
+  });
+}
+
+
+
+
+// btnFaq.addEventListener('click',  (e) => {
+//     e.preventDefault()
+//     // console.log("Função funcionando")
+//     modalFaq.classList.add('is-visible')
+//     modalFaq.classList.remove('is-hidden')
+// })
+// btnCloseFaq.addEventListener('click', (e) => {
+//     e.preventDefault()
+//     modalFaq.classList.remove('is-visible')
+//     modalFaq.classList.add('is-hidden')
+// })
+
+btnPolitic.addEventListener('click',  (e) => {
+    e.preventDefault()
+    // console.log("Função funcionando")
+    modalPolitic.classList.add('is-visible')
+    modalPolitic.classList.remove('is-hidden')
+})
+btnClose.addEventListener('click', (e) => {
+    e.preventDefault()
+    modalPolitic.classList.remove('is-visible')
+    modalPolitic.classList.add('is-hidden')
+})
+
+btnPoliticForm.addEventListener('click',  (e) => {
+    e.preventDefault()
+    // console.log("Função funcionando")
+    modalPolitic.classList.add('is-visible')
+    modalPolitic.classList.remove('is-hidden')
+})
 
 
 

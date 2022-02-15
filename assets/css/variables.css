@@ -23,12 +23,12 @@
         --blue_dark: #0c2e6e;
         --text_light:  #f9fbe7;
         --text_grey: #837e9f;
-        --text_black: #263238;
+        --text_black: hsl(200, 19%, 18%);
         --text_details: #fbdd57;
         --text_hover: #CB92B1;
         --text_tile: #021535;
 
-
+        --red: #ff5252;
         --bg-light: #fafafa;
 
 }

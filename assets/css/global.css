@@ -61,8 +61,13 @@ textarea{
 
 .is-my-primary {
     background: var(--text_details);
-    border: var(--amber);
+    border: var(--text_details);
 
+}
+.is-my-danger {
+    background: var(--red);
+    border: var(--red);
+    color: var(--text_light);
 }
 
 .shadow {
@@ -75,10 +80,6 @@ textarea{
 
 .mt-1 {
     margin-top: 3rem !important;
-}
-
-.box {
-    background: var(--light_text);
 }
 
 .button {
@@ -124,5 +125,20 @@ section {
     display: flex!important;
     flex-direction: row;
 }
-
+.is-flex{
+    display: flex;
+}
+.is-hidden{
+    display: none;
+}
+.is-visible{
+    display: flex;
+}
+.is-between{
+    justify-content: space-between;
+}
+.box{
+   box-shadow: -.6rem -.6rem 2.6rem 0 rgba(255,255,255, .83);
+   background: var(--text_light);
+}
 
