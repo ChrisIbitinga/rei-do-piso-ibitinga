@@ -37,6 +37,9 @@ textarea {
     font-family: 'Open Sans', sans-serif;
     resize: none;
 }
+button{
+    transition: filter .5s;
+}
 
 input,
 textarea {
@@ -69,6 +72,16 @@ textarea{
     border: var(--red);
     color: var(--text_light);
 }
+.is-my-secundary {
+    background: var(--primary_color);
+    border: var(--primary_color);
+    color: var(--text_light);
+}
+.is-my-secundary:hover {
+    filter:brightness(1.2);
+    color: var(--text_light);
+    transition: filter .5s;
+}
 
 .shadow {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -94,6 +107,7 @@ textarea{
     box-shadow: .4rem .4rem .4rem  rgba(0, 0, 0, .11);
     transition: box-shadow ease .5s;
     cursor: pointer;
+    transition: filter .5s;
 }
 .button:hover {
     box-shadow: .2rem .2rem .2em  rgba(0, 0, 0, .11);

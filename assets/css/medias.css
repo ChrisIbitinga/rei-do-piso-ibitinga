@@ -250,6 +250,10 @@
         display: block;
         width: 100%;
     }
+    .email_content a.button {
+      font-size: .8rem;
+      padding: .8rem 1.5rem; 
+    }
 
 
 

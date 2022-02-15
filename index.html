@@ -457,7 +457,7 @@
                         <span>Ficou com alguma dúvida?</span>
                         <h2>Mande sua mensagem.</h2>
 
-                        <form class="form" action="">
+                        <form class="form" action="https://formsubmit.co/contato.ibwebsites@gmail.com" method="POST">
 
                             <label class="label">Nome</label>
                             <div class="control">
@@ -475,10 +475,19 @@
 
                             <label for="message" class="label">Mensagem</label>
                             <div class="control">
-                                <textarea class="textarea is-medium" placeholder="Escreva sua mensagem."></textarea>
+                                <textarea 
+                                name="message"
+                                class="textarea is-medium" 
+                                placeholder="Escreva sua mensagem.">
+                            </textarea>
                             </div>
 
+                            <input type="hidden" name="_next" value="http://127.0.0.1:5500/success.html">
 
+                            <input type="hidden" name="_autoresponse" value="Seu email foi recebido, obrigado por entrar em contato com Rei do Piso, vamos responder o mais rápido possível.">
+
+                            <input type="hidden" name="_template" value="table">
+                            
                             <div class="control mt-1 is-flex is-between">
                                 <button type="submit" class="button  is-my-primary is-right">
                                     Enviar
