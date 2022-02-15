@@ -82,14 +82,32 @@ function openTab(idTab) {
 
 
 let modalPolitic =   document.querySelector('#modal-politic')
-
 let btnPolitic =     document.querySelector('#btnPolitic')
+
+
+let menuMobile =   document.querySelector('.menu_mobile')
+let btnCloseMenu   =     document.querySelector('#close_menu')
+let btnToggle   =     document.querySelector('.toggle-button')
+let linkCloseMenu   =     document.querySelectorAll('.menu_mobile ul li a.navbar-item ')
+
+// console.log(linkCloseMenu)
+
 let btnClose   =     document.querySelector('.is-my-danger')
+
 
 let btnPoliticForm = document.querySelector('#btnPoliticForm')
 
+let link;
 
-
+for (link = 0;link < linkCloseMenu.length; link++){
+    linkCloseMenu[link].addEventListener('click', (e) => {
+        scrollToIdClick(e)
+        menuMobile.classList.remove('is-visible')
+        menuMobile.classList.add('is-hidden')
+    })
+    
+}
+     
 let coll = document.getElementsByClassName("collapsible");
 let i;
 
@@ -130,6 +148,16 @@ btnClose.addEventListener('click', (e) => {
     e.preventDefault()
     modalPolitic.classList.remove('is-visible')
     modalPolitic.classList.add('is-hidden')
+})
+btnToggle.addEventListener('click', (e) => {
+    e.preventDefault()
+    menuMobile.classList.remove('is-hidden')
+    menuMobile.classList.add('is-visible')
+})
+btnCloseMenu.addEventListener('click', (e) => {
+    e.preventDefault()
+    menuMobile.classList.remove('is-visible')
+    menuMobile.classList.add('is-hidden')
 })
 
 btnPoliticForm.addEventListener('click',  (e) => {
