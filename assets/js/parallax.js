@@ -64,6 +64,26 @@ function smoothScrollTo(endX, endY, duration) {
     }, 1000 / 60); // 60 fps
 };
 
+bloq = document.getElementById('active_image').click()
+
+
+function toggleImage(idImage) {
+    const itemChange = document.getElementById(idImage)
+    // console.log(itemChange)
+    const contents = document.querySelectorAll('.box_prod')
+    
+    for(let i = 0; i < contents.length; i++) {
+        contents[i].classList.remove('is-flex-tab')   
+    }
+
+    itemChange.classList.add('is-flex-tab')
+
+
+}
+
+
+
+
 document.getElementById('active').click()
 
 function openTab(idTab) {

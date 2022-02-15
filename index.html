@@ -201,7 +201,7 @@
                                 <i class="material-icons">handyman</i>
                             </div>
                             <div class="service_caption">
-                                <span id="active" onclick="openTab('ferramentas')" class="trigger_tab">
+                                <span onclick="openTab('ferramentas')" class="trigger_tab">
                                     Ferramentas
                                     <i class="material-icons">swipe_right</i>
                                 </span>
@@ -369,39 +369,53 @@
                         <h3>Sua casa, sua cara.</h3>
                         <span> <strong> INSPIRE-SE</strong></span>
                         <div class="product_slide">
-                            <figure>
-                                <img class="" src="./assets/img/products/piso2.jpg">
+                            <figure id="active_image" onclick="toggleImage('amb1')">
+                                <img class="" src="./assets/img/products/prod1.png">
                             </figure>
-                            <figure class="image is-128x128">
-                                <img class="" src="./assets/img/products/piso3.jpg">
+                            <figure onclick="toggleImage('amb2')">
+                                <img class="" src="./assets/img/products/prod2.png">
                             </figure>
-                            <figure class="image is-128x128">
-                                <img class="" src="./assets/img/products/piso4.jpg">
+                            <figure onclick="toggleImage('amb3')">
+                                <img class="" src="./assets/img/products/prod3.png">
                             </figure>
 
                             <div class="inspiration_buttons">
-                                <button>
-                                    <img class="" src="./assets/img/products/piso2.jpg">
+                                <button id="active_image" onclick="toggleImage('amb1')">
+                                    <img class="" src="./assets/img/products/prod1.png">
                                 </button>
                             </div>
                             <div class="inspiration_buttons">
-                                <button>
-                                    <img class="" src="./assets/img/products/piso3.jpg">
+                                <button onclick="toggleImage('amb2')">
+                                    <img class="" src="./assets/img/products/prod2.png">
                                 </button>
                             </div>
                             <div class="inspiration_buttons">
-                                <button>
-                                    <img class="" src="./assets/img/products/piso4.jpg">
+                                <button onclick="toggleImage('amb3')">
+                                    <img class="" src="./assets/img/products/prod3.png">
                                 </button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="inspiration_image">
-                        <img src="./assets/img/bg-inspiration.jpg" alt="">
-                        <div class="block"></div>
-                        <div class="box_opacity_true"></div>
-                    </div>
+                     <div class="box_inspiration_image">
+                        <div class="inspiration_image box_prod" id="amb1">
+                            <img src="./assets/img/bgs/ambiente1.png" alt="">
+                            <div class="block"></div>
+                            <div class="box_opacity_true"></div>
+                        </div>
+    
+                        <div class="inspiration_image box_prod" id="amb2">
+                            <img src="./assets/img/bgs/ambiente2.png" alt="">
+                            <div class="block"></div>
+                            <div class="box_opacity_true"></div>
+                        </div>
+    
+                        <div class="inspiration_image box_prod" id="amb3">
+                            <img src="./assets/img/bgs/ambiente3.png" alt="">
+                            <div class="block"></div>
+                            <div class="box_opacity_true"></div>
+                        </div>
+                     </div>
                 </div>
             </div>
         </section>

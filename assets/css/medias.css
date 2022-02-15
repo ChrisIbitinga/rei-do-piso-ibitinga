@@ -217,7 +217,7 @@
 
     .inspiration_buttons button {
         width: 9rem;
-        height: 4rem;
+        height: 6rem;
         padding: 0;
         border: none;
         cursor: pointer;
@@ -225,9 +225,8 @@
 
     .inspiration_buttons button img {
         width: 9rem;
-        height: 4rem;
+        height: 6rem;
     }
-
     .contact_labels {
         margin-bottom: 2rem;
     }

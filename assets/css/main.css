@@ -435,7 +435,9 @@ nav {
     padding-right: .5rem;
 
 }
-
+#inspiration .box_inspiration_image{
+    flex: 2;
+}
 #inspiration .product_slide figure {
     margin-top: 5rem;
     flex: 1;
@@ -450,6 +452,11 @@ nav {
 .inpiration_products {
     display: flex;
     margin-top: 1rem;
+}
+
+.box_prod {
+    display: none;
+    flex: 1;
 }
 
 .inpiration_products figure {
