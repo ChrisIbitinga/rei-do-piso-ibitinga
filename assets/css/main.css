@@ -94,8 +94,10 @@ nav {
     padding: .9rem;
 }
 
-.hero_caption button {
+.hero_caption a.button {
     margin-bottom: 2rem;
+    color: var(--text_dark);
+    width: 85%;
 }
 
 .box_social {
@@ -341,8 +343,10 @@ nav {
     margin-bottom: 3rem;
 }
 
-.tab_services button {
+.tab_services a.button {
     margin-top: 2rem;
+    color: var(--text_black);
+    width: 85%;
 }
 
 .box_slide {
