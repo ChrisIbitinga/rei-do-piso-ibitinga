@@ -147,7 +147,7 @@ nav {
 
 .box_opacity {
     position: absolute;
-    background: rgb(0, 0, 0, 0.3);
+    background: rgb(0, 0, 0, 0.2);
     width: 97%;
     /* width: 25%; */
     min-height: 97%;
@@ -160,7 +160,7 @@ nav {
 
 .box_opacity:hover {
     transition: ease 1s;
-    background: rgb(8, 60, 155, 0.8);
+    background: rgb(0, 0, 0, 0.6);
 }
 
 .box_opacity_true {
@@ -278,8 +278,8 @@ nav {
 }
 
 .service_icon {
-    width: 6rem;
-    height: 6rem;
+    min-width: 5rem;
+    min-height: 5rem;
     border-radius: 50%;
     background: var(--primary_color);
     display: flex;
@@ -431,6 +431,7 @@ nav {
     top: 15rem;
     z-index: 999;
     color: var(--text_details);
+    margin-bottom: 0;
 }
 
 #inspiration .product_slide {
